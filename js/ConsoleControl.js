@@ -13,7 +13,7 @@
 			calleeStackIndex: 2,
 			stackMatchRegex: [
 				'[^(+]+\:[0-9]+\:[0-9]+[^)]', // From "at Object.InjectedScript.evaluate (<anonymous>:682:21)", pluck "(<anonymous>:682:21)" alone.
-				'[^ +]+\:[0-9]+\:[0-9]+', // From "at https://webchat.voicecurve.com/livechat/script/8005251315?_=1429679936851:3:1870", pluck "https://webchat.voicecurve.com/livechat/script/8005251315?_=1429679936851:3:1870" alone.
+				'[^ +]+\:[0-9]+\:[0-9]+', // From "at https://www.google.com?_=1429679936851:3:1870", pluck "https://www.google.com?_=1429679936851:3:1870" alone.
 			],
 		},
 		'Firefox': {
