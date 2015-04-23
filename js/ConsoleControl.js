@@ -204,27 +204,3 @@
 	root.ConsoleControl = { consoleBackup: consoleBackup, print: printLogs, logs: getLogs, eraseLogs: eraseLogs, record: record, status: status, reset: _unWrapConsole, enable: enable, disable: disable, };
 
 })(this);
-
-function test() {
-	console.log('1.', 'This should be printed with Line Number!');
-	ConsoleControl.status(true);
-	console.log('2.', 'This should also be printed with Line Number!');
-	ConsoleControl.status(false);
-	console.log('3.', 'This should NOT be printed!');
-	ConsoleControl.status(true);
-	console.log('4.', 'This should be printed with Line Number!');
-	ConsoleControl.record(true);
-	console.log('5.', 'RECORDING STARTED!');
-	console.log('6.', 'During recoriding... 1. Should be printed and recorded');
-	console.log('7.', 'Hiding logs.');
-	ConsoleControl.status(false);
-	console.log('8.', 'During recoriding... 2; Hidden');
-	console.log('9.', 'During recoriding... 3; Hidden');
-	ConsoleControl.record(false);
-	ConsoleControl.status(true);
-	console.log('10.', 'RECORDING STOPPED!, And logs enalbled');
-	console.log('11.', 'Printing recorded');
-	ConsoleControl.print();
-	console.log('12.', 'Allowing logs.');
-	ConsoleControl.record(false);
-}
