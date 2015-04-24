@@ -1,15 +1,15 @@
 (function(root) {
-	/**
-	 * Plugin Description
-	 */
-	var plugin = {
-		name: 'ConsoleControl',
-		accessVariable: 'ConsoleControl',
-		version: '0.0.1',
- 	};
-	/**
-	 * Status Flags
-	 */
+    /**
+     * Plugin Description
+     */
+    var plugin = {
+        name: 'ConsoleControl',
+        accessVariable: 'ConsoleControl',
+        version: '0.0.1',
+    };
+    /**
+     * Status Flags
+     */
     var consoleBackup = {},
         isConsoleBackedUp = false,
         isConsoleEnabled = true,
@@ -21,7 +21,7 @@
     /**
      * Logger methods to override
      */
-	var methodsToOverride = ['log', 'info', 'debug', 'memory', ];
+    var methodsToOverride = ['log', 'info', 'debug', 'memory', 'error', ];
     /**
      * Presets for browsers
      * Please add the properties if we had missed to support your browser
@@ -270,9 +270,9 @@
      * @return {undefined}
      */
     function _logger(level, argumentsArg, options) {
-    	argumentsArg = Array.prototype.slice.call(argumentsArg);
+        argumentsArg = Array.prototype.slice.call(argumentsArg);
         if (options.metaInfo) {
-        	argumentsArg.push('\t' + options.metaInfo)
+            argumentsArg.push('\t' + options.metaInfo)
         }
         var i = -1,
             args = [],
@@ -342,7 +342,6 @@
         options.console = false;
         return status(options);
     }
-
     /**
      * Control the record status alone
      * @param  {Boolean} 	Flag which says whether to record or not
@@ -359,7 +358,7 @@
      * @return {String} 	Version of the plugin
      */
     function version() {
-    	return plugin.version;
+        return plugin.version;
     }
     /**
      * Initializing
