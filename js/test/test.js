@@ -51,3 +51,11 @@ function test() {
 	console.error('Printing the recorded logs.');
 	ConsoleControl.print();
 }
+
+function loadTest() {
+	ConsoleControl.disable({record: true});
+	consoleTest('Load Test ', 10000);
+	ConsoleControl.enable({record: false});
+	ConsoleControl.print();
+	// ConsoleControl.eraseLogs();
+}
