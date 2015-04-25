@@ -51,6 +51,7 @@ ConsoleControl.print(); 	                // Prints the recorded log
 ```javascript
 ConsoleControl.disable({record: true}); 	// Disabling logs and enabling the record logs
 console.log('1. RECORDED');         		// This will be recorded
+
 ConsoleControl.print(); 	        		// Prints the recorded log
 ```
 
@@ -61,7 +62,7 @@ Methods  									| Description 													| Arguments 	| Argument Value 		|
 ```ConsoleControl.disable(<options>)``` 	| Disable logs 													| options 		| {record: true/false} 	|
 ```ConsoleControl.record(<recordFlag>)``` 	| Sets the record status 										| *recordFlag 	| true/false 			|
 ```ConsoleControl.print()```				| Prints the recorded logs along with file name and line number	| 				| 						|
-```ConsoleControl.logs()``` 				| Get the recorded logs as JSON 								| 				| 						|
+```ConsoleControl.logs()``` 				| Returs the recorded logs as JSON 								| 				| 						|
 ```ConsoleControl.eraseLogs()``` 			| Erases the recorded logs 										| 				| 						|
 ```ConsoleControl.reset()``` 				| Resets the plugin 											| 				| 						|
 ```ConsoleControl.version()```				| Returns the version of plugin									| 				| 						|
@@ -70,7 +71,7 @@ Methods  									| Description 													| Arguments 	| Argument Value 		|
 ## Motivation
 
 - In production evironment, **no developer want to leak their logs** in browser console but still they **love to capture the logs** silently for debugging.
-- This plugin will help developers to **stop printing the logs** in broswer console and to **record the logs silently**.
+- This plugin helps the developers to **stop printing the logs** in broswer console and to **record logs silently**.
 
 **Eg:**
 
@@ -94,3 +95,4 @@ ConsoleControl.logs();                          // Returns the recorded logs as 
 ## Contributors
 
 - **Sundarasan Natarajan**
+- **You, if you are interested**
