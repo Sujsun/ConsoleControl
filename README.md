@@ -55,16 +55,16 @@ ConsoleControl.print(); 	        		// Prints the recorded log
 ```
 
 ## Doc
-Methods  									| Description 													| Arguments 	|
-------------- 								| ------------- 												| ---------  	|---------
-```ConsoleControl.enable(<options>)```		| Enable logs 													| options 		| {record: <Boolean>}
-```ConsoleControl.disable(<options>)``` 	| Disable logs 													| options 		| {record: <Boolean>}
-```ConsoleControl.record(<recordFlag>)``` 	| Sets the record status 										| *recordFlag 	| <Boolean>
-```ConsoleControl.print()```				| Prints the recorded logs along with file name and line number	| 				|
-```ConsoleControl.logs()``` 				| Get the recorded logs as JSON 								| 				|
-```ConsoleControl.eraseLogs()``` 			| Erases the recorded logs 										| 				|
-```ConsoleControl.reset()``` 				| Resets the plugin 											| 				|
-```ConsoleControl.version()```				| Returns the version of plugin									| 				|
+Methods  									| Description 													| Arguments 	| Argument Value 		|
+------------- 								| ------------- 												| ------------- | ------------- 		|
+```ConsoleControl.enable(<options>)```		| Enable logs 													| options 		| {record: <Boolean>} 	|
+```ConsoleControl.disable(<options>)``` 	| Disable logs 													| options 		| {record: <Boolean>} 	|
+```ConsoleControl.record(<recordFlag>)``` 	| Sets the record status 										| *recordFlag 	| <Boolean> 			|
+```ConsoleControl.print()```				| Prints the recorded logs along with file name and line number	| 				| 						|
+```ConsoleControl.logs()``` 				| Get the recorded logs as JSON 								| 				| 						|
+```ConsoleControl.eraseLogs()``` 			| Erases the recorded logs 										| 				| 						|
+```ConsoleControl.reset()``` 				| Resets the plugin 											| 				| 						|
+```ConsoleControl.version()```				| Returns the version of plugin									| 				| 						|
 
 
 ## Motivation
