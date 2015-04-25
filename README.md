@@ -15,7 +15,7 @@ Just include ConsoleControl.js file in your page.
 **Eg:**
 
 ```html
-<script src="/js/ConsoleControl.js.js"></script>
+<script src="/js/ConsoleControl.js"></script>
 ```
 
 And start using it.
@@ -55,8 +55,8 @@ ConsoleControl.print(); 	        		// Prints the recorded log
 ```
 
 ## Doc
-Methods  									| Description 													| Arguments
-------------- 								| ------------- 												| ---------
+Methods  									| Description 													| Arguments 	|
+------------- 								| ------------- 												| ---------  	|---------
 ```ConsoleControl.enable(<options>)```		| Enable logs 													| options 		| {record: <Boolean>}
 ```ConsoleControl.disable(<options>)``` 	| Disable logs 													| options 		| {record: <Boolean>}
 ```ConsoleControl.record(<recordFlag>)``` 	| Sets the record status 										| *recordFlag 	| <Boolean>
