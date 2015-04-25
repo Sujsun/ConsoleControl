@@ -57,9 +57,9 @@ ConsoleControl.print(); 	        		// Prints the recorded log
 ## Doc
 Methods  									| Description 													| Arguments 	| Argument Value 		|
 ------------- 								| ------------- 												| ------------- | ------------- 		|
-```ConsoleControl.enable(<options>)```		| Enable logs 													| options 		| {record: <Boolean>} 	|
-```ConsoleControl.disable(<options>)``` 	| Disable logs 													| options 		| {record: <Boolean>} 	|
-```ConsoleControl.record(<recordFlag>)``` 	| Sets the record status 										| *recordFlag 	| <Boolean> 			|
+```ConsoleControl.enable(<options>)```		| Enable logs 													| options 		| {record: true/false} 	|
+```ConsoleControl.disable(<options>)``` 	| Disable logs 													| options 		| {record: true/false} 	|
+```ConsoleControl.record(<recordFlag>)``` 	| Sets the record status 										| *recordFlag 	| true/false 			|
 ```ConsoleControl.print()```				| Prints the recorded logs along with file name and line number	| 				| 						|
 ```ConsoleControl.logs()``` 				| Get the recorded logs as JSON 								| 				| 						|
 ```ConsoleControl.eraseLogs()``` 			| Erases the recorded logs 										| 				| 						|
