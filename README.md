@@ -77,7 +77,7 @@ Methods  									| Description 													| Arguments 	| Argument Value 		|
 ```javascript
 var environment = 'production';
 
-if(environment === 'producation') {
+if(environment === 'production') {
 	ConsoleControl.disable({record: true}); 	// Disabling logs and enabling the record logs
 }
 ```
