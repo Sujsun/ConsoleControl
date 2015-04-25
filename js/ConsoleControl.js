@@ -368,14 +368,13 @@
      * Members to Export
      */
     var exports = {
+    	enable: enable,
+        disable: disable,
+        record: record,
         print: printLogs,
         logs: getLogs,
         eraseLogs: eraseLogs,
-        status: status,
         reset: _unWrapConsole,
-        enable: enable,
-        disable: disable,
-        record: record,
         version: version,
     };
     /**
