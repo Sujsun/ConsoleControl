@@ -274,20 +274,7 @@
         if (options.metaInfo) {
             argumentsArg.push('\t' + options.metaInfo)
         }
-        var i = -1,
-            args = [],
-            l = argumentsArg.length,
-            fn = 'console.' + (level || 'log') + '(args)';
-        while (++i < l) {
-            args.push('args[' + i + ']');
-        };
-        fn = new Function('args', fn.replace(/args/, args.join(',')));
-        root.console[level] = consoleBackup[level];
-        fn(argumentsArg);
-        _decideWrapConsole({
-            methodsToOverride: [level],
-            skipStatusCheck: true,
-        });
+        consoleBackup[level].apply(window.console, argumentsArg);
     }
     /**
      * Get the metaInfo (i.e line number & file) from the given Error object
